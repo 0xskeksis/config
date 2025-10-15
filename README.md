@@ -1,6 +1,12 @@
-This is my config, i use i3 + endeavour os.
 
-For nvim i use: https://github.com/bonsthie/nvim   
+### Distro   
+I use i3 + endeavour os.
+
+
+### Neovim   
+For nvim i use: https://github.com/bonsthie/nvim
+
+### Rofi
 For rofi i use one of these theme with a rose-pine color: https://github.com/adi1090x/rofi   
 
 ### Examples:
