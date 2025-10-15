@@ -1,0 +1,48 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    config                                             :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: swenn <swenn@42angouleme.fr>               +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/10/14 12:19:31 by swenn             #+#    #+#              #
+#    Updated: 2025/10/14 12:19:57 by swenn            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+[time]
+command=date '+%H:%M'
+interval=1
+color=#ffffff
+color=#8be9fd
+
+[separator]
+command=echo"    "
+interval=0
+color=#8be9fd
+
+[battery]
+command=sh ~/.config/i3blocks/scripts/battery.sh
+interval=3
+color=#8be9fd
+
+[separator]
+command=echo"    "
+interval=0
+color=#8be9fd
+
+[cpu]
+command=top -bn1 | grep "Cpu" | awk '{print $2 + $4 "%"}'
+interval=5
+label=🔲
+color=#8be9fd
+
+[ram]
+command=free -h | awk '/Mem/ {print $3 "/" $2}'
+interval=3
+label= 
+color=#8be9fd
+
+[volume]
+command=sh ~/.config/i3blocks/scripts/volume.sh
+interval=1
